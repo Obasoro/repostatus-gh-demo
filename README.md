@@ -15,3 +15,16 @@ $ aws cloudformation deploy \
   --template-file hack/apprunner-prereqs-cfn.yaml \
   --capabilities CAPABILITY_IAM
 ```
+### Cloudformation Template
+```
+cat ~/environment/repostatus-gh-demo/hack/apprunner-prereqs-cfn.yaml
+```
+
+### Deploy Template
+```
+cd ~/environment/repostatus-gh-demo && aws cloudformation deploy \
+  --stack-name repostatus-gh-demo-infra \
+  --template-file hack/apprunner-prereqs-cfn.yaml \
+  --capabilities CAPABILITY_IAM
+```
+
